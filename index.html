@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1 class='logo'>
+    Solar explorer
+    <span>RaidZyoo</span>
+  </h1>
+  <input class='planet9' id='pluto' type='radio' name='planet'>
+  <label class='menu pluto' for='pluto'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Pluto
+      </h2>
+      <h3>39.5 AU</h3>
+    </div>
+  </label>
+  <input class='planet8' id='neptune' type='radio' name='planet'>
+  <label class='menu neptune' for='neptune'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Neptunus
+      </h2>
+      <h3>30.06 AU</h3>
+    </div>
+  </label>
+  <input class='planet7' id='uranus' type='radio' name='planet'>
+  <label class='menu uranus' for='uranus'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Uranus
+      </h2>
+      <h3>19.18 AU</h3>
+    </div>
+  </label>
+  <input class='planet6' id='saturn' type='radio' name='planet'>
+  <label class='menu saturn' for='saturn'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Saturnus
+      </h2>
+      <h3>9.539 AU</h3>
+    </div>
+  </label>
+  <input class='planet5' id='jupiter' type='radio' name='planet'>
+  <label class='jupiter menu' for='jupiter'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Jupiter
+      </h2>
+      <h3>5.203 AU</h3>
+    </div>
+  </label>
+  <input class='planet4' id='mars' type='radio' name='planet' checked='checked'>
+  <label class='mars menu' for='mars'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Mars
+      </h2>
+      <h3>1.524 AU</h3>
+    </div>
+  </label>
+  <input class='planet3' id='earth' type='radio' name='planet' checked='checked'>
+  <label class='earth menu' for='earth'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Bumi
+      </h2>
+      <h3>1 AU</h3>
+    </div>
+  </label>
+  <input class='planet2' id='venus' type='radio' name='planet' checked='checked'>
+  <label class='menu venus' for='venus'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Venus
+      </h2>
+      <h3>0.723 AU</h3>
+    </div>
+  </label>
+  <input class='planet1' id='mercury' type='radio' name='planet' checked='checked'>
+  <label class='menu mercury' for='mercury'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Mercurius
+      </h2>
+      <h3>0.39 AU</h3>
+    </div>
+  </label>
+  <div class='solar'>
+    <div class='solar_systm'>
+      <div class='mercury planet'>
+        <div class='mercury planet_description'>
+          <h2>Planet</h2>
+          <h1>Merkurius</h1>
+          <p>Planet terdekat dari matahari dan berputar mengelilingi matahari lebih cepat dari pada planet lain nya.</p>
+          <label for='readMercury'>
+            <a>
+              Lebih lengka
+              <span>p</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='planet venus'>
+        <div class='planet_description venus'>
+          <h2>Planet</h2>
+          <h1>Venus</h1>
+          <p>planet kedua dari matahari dan planet terbesar ke enam tata surya, sering di sebut "kembaran" Bumi karena ukuran dan massa nya serupa.</p>
+          <label for='readVenus'>
+            <a>
+              Lebih lengka
+              <span>p</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='earth planet'>
+        <div class='moon moon'>
+          <h3>Bulan</h3>
+          <h2>Bulan</h2>
+        </div>
+        <div class='m trajectory'></div>
+        <div class='earth planet_description'>
+          <h2>Planet</h2>
+          <h1>Bumi</h1>
+          <p>Bumi adalah tempat kita tinggal, di dalam nya ada besi, oksigen, silikon, magesium, dan nikel.</p>
+          <label for='readEarth'>
+            <a>
+              Lebih lengka
+              <span>p</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='mars planet'>
+        <div class='deimos moon'>
+          <h3>Bulan</h3>
+          <h2>Deimos</h2>
+        </div>
+        <div class='d trajectory'></div>
+        <div class='moon phoebos'>
+          <h3>Bulan</h3>
+          <h2>Phoebos</h2>
+        </div>
+        <div class='p trajectory'></div>
+        <div class='mars planet_description'>
+          <h2>Planet</h2>
+          <h1>Mars</h1>
+          <p>Mars adalah planet berbatu dengan atmosfer tipis, Mars di ambil dari nama dewa perang romawi, biasa di sebut dengan "Planet Merah".</p>
+          <label for='readMars'>
+            <a>
+              Lebih lengka
+              <span>p</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='jupiter planet'>
+        <div class='lo moon'>
+          <h3>Bulan</h3>
+          <h2>Io</h2>
+        </div>
+        <div class='europa moon'>
+          <h3>Bulan</h3>
+          <h2>Eropa</h2>
+        </div>
+        <div class='ganymede moon'>
+          <h3>Moon</h3>
+          <h2>Ganimede</h2>
+        </div>
+        <div class='lop trajectory'></div>
+        <div class='eu trajectory'></div>
+        <div class='ga trajectory'></div>
+        <div class='jupiter planet_description'>
+          <h2>Planet</h2>
+          <h1>Jupiter</h1>
+          <p>Jupiter adalah planet terbesar di tata surya. Jupiter diambil berdasarkan nama dewa yunani. </p>
+          <label for='readJupiter'>
+            <a>
+              Lebih lengka
+              <span>p</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='planet saturn'>
+        <div class='moon titan'>
+          <h3>Bulan</h3>
+          <h2>Titan</h2>
+        </div>
+        <div class='dione moon'>
+          <h3>Bulan</h3>
+          <h2>Dione</h2>
+        </div>
+        <div class='enceladus moon'>
+          <h3>Bulan</h3>
+          <h2>Enceladus</h2>
+        </div>
+        <div class='ti trajectory'></div>
+        <div class='di trajectory'></div>
+        <div class='enc trajectory'></div>
+        <div class='planet_description saturn'>
+          <h2>Planet</h2>
+          <h1>Saturnus</h1>
+          <p>Saturnus adalah planet keenam dari Matahari. Selain itu, Saturnus merupakan planet terbesar kedua di tata surya setelah Jupiter.</p>
+          <label for='readSaturn'>
+            <a>
+              Lebih lengka
+              <span>p</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='planet uranus'>
+        <div class='miranda moon'>
+          <h3>Moon</h3>
+          <h2>Miranda</h2>
+        </div>
+        <div class='ariel moon'>
+          <h3>Moon</h3>
+          <h2>Ariel</h2>
+        </div>
+        <div class='moon umbriel'>
+          <h3>Moon</h3>
+          <h2>Umbriel</h2>
+        </div>
+        <div class='mir trajectory'></div>
+        <div class='ari trajectory'></div>
+        <div class='trajectory umb'></div>
+        <div class='planet_description uranus'>
+          <h2>Planet</h2>
+          <h1>Uranus</h1>
+          <p> Uranus (berasal dari nama Latin Ūranus untuk nama dewa Yunani Οὐρανός) adalah planet ketujuh dari Matahari. Uranus merupakan planet yang memiliki jari-jari terbesar ketiga sekaligus massa terbesar keempat di Tata Surya.</p>
+          <label for='readUranus'>
+            <a>
+              Lebih lengka
+              <span>p</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='neptune planet'>
+        <div class='moon triton'>
+          <h3>Moon</h3>
+          <h2>Triton</h2>
+        </div>
+        <div class='moon proteus'>
+          <h3>Moon</h3>
+          <h2>Proteus</h2>
+        </div>
+        <div class='moon nereid'>
+          <h3>Moon</h3>
+          <h2>Nereid</h2>
+        </div>
+        <div class='trajectory tri'></div>
+        <div class='pro trajectory'></div>
+        <div class='ner trajectory'></div>
+        <div class='neptune planet_description'>
+          <h2>Planet</h2>
+          <h1>Neptunus</h1>
+          <p> Neptunus merupakan planet terjauh (kedelapan) dari Matahari. Neptunus merupakan planet terbesar keempat berdasarkan diameter (49.530 km) dan terbesar ketiga berdasarkan massa.</p>
+          <label for='readNeptune'>
+            <a>
+              Lebih lengka
+              <span>p</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='planet pluto'>
+        <div class='planet_description pluto'>
+          <h2>Planet kerdil</h2>
+          <h1>Pluto</h1>
+          <p>Pluto merupakan objek trans-Neptunus dengan volume terbesar dan massa yang sedikit lebih kecil daripada Eris, planet katai di piringan tersebar</p>
+          <label for='readPluto'>
+            <a>
+              Lebih lengka
+              <span>p</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'>               </div>
+      </div>
+    </div>
+  </div>
+  <input class='read' id='readMercury' type='radio' name='mercuryRead'>
+  <label class='closeBig' for='closeMercury'></label>
+  <input class='read' id='closeMercury' type='radio' name='mercuryRead'>
+  <div class='panel'>
+    <h1>Merkurius</h1>
+    <p>Merkurius adalah planet terdekat dengan matahari. Oleh karena itu, ia mengelilingi matahari lebih cepat dibandingkan planet lainnya, itulah sebabnya orang Romawi menamakannya sesuai dengan nama dewa pembawa pesan mereka yang gesit.</p>
+    <p>Bangsa Sumeria juga mengetahui keberadaan Merkurius setidaknya sejak 5.000 tahun yang lalu. Ia sering dikaitkan dengan Nabu, dewa penulisan. Merkurius juga diberi nama terpisah karena kemunculannya sebagai bintang pagi dan bintang malam. Namun, para astronom Yunani mengetahui bahwa kedua nama tersebut merujuk pada benda yang sama, dan Heraclitus, sekitar 500 SM, dengan tepat mengira bahwa Merkurius dan Venus mengorbit matahari, bukan Bumi.
+    </p>
+    <img src='https://i2.wp.com/www.astronomytrek.com/wp-content/uploads/2012/11/mercury-1.jpg?fit=678%2C381&ssl=1'>
+    <h2>Setahun di Merkurius hanya 88 hari.</h2>
+    <p>Satu hari matahari (waktu dari tengah hari hingga tengah hari di permukaan planet) di Merkurius berlangsung setara dengan 176 hari Bumi, sedangkan hari sidereal (waktu untuk 1 rotasi terhadap suatu titik tetap) berlangsung selama 59 hari Bumi. Merkurius hampir terkunci secara pasang surut terhadap Matahari dan seiring berjalannya waktu hal ini telah memperlambat rotasi planet hingga hampir menyamai orbitnya mengelilingi Matahari. Merkurius juga mempunyai eksentrisitas orbit tertinggi di antara semua planet dengan jaraknya dari Matahari berkisar antara 46 hingga 70 juta km.</p>
+    <h2>Merkurius adalah planet terkecil di Tata Surya.</h2>
+    <p>Salah satu dari lima planet yang terlihat dengan mata telanjang a, Merkurius hanya berjarak 4,879 Kilometer melintasi ekuatornya, dibandingkan dengan 12,742 Kilometer di Bumi.</p>
+    <h2>Merkurius merupakan planet terpadat kedua setelah Bumi. </h2>
+    <p>Meski planetnya kecil, Merkurius sangat padat. Setiap sentimeter kubik memiliki massa jenis 5,4 gram, dan hanya Bumi yang memiliki massa jenis lebih tinggi. Hal ini sebagian besar disebabkan oleh komposisi Merkurius yang sebagian besar terdiri dari logam berat dan batuan.</p>
+    <h2>Merkurius memiliki kerutan.</h2>
+    <p>Ketika inti besi planet ini mendingin dan berkontraksi, permukaan planet menjadi berkerut. Para ilmuwan menamai kerutan-kerutan ini, Lobate Scarps. Scarps ini bisa mencapai tinggi satu mil dan panjang ratusan mil.</p>
+    <br>
+  </div>
+  <input class='read' id='readVenus' type='radio' name='venusRead'>
+  <label class='closeBig' for='closeVenus'></label>
+  <input class='read' id='closeVenus' type='radio' name='venusRead'>
+  <div class='panel'>
+    <h1>Venus</h1>
+    <p>Venus, planet kedua dari matahari, dinamai sesuai nama dewi cinta dan kecantikan Romawi. Planet ini – satu-satunya planet yang diberi nama berdasarkan nama perempuan – mungkin dinamai berdasarkan dewa tercantik di jajarannya karena ia bersinar paling terang dari lima planet yang diketahui para astronom kuno.</p>
+    <p>Pada zaman dahulu, Venus sering dianggap sebagai dua bintang berbeda, bintang sore dan bintang pagi, yaitu bintang yang pertama kali muncul saat matahari terbenam dan terbit. Dalam bahasa Latin, mereka masing-masing dikenal sebagai Vesper dan Lucifer. Di zaman Kristen, Lucifer, atau "pembawa terang", dikenal sebagai nama Setan sebelum kejatuhannya. Namun pengamatan lebih lanjut terhadap Venus di era luar angkasa menunjukkan lingkungan yang sangat mengerikan. Hal ini membuat Venus menjadi planet yang sangat sulit untuk diamati dari dekat, karena pesawat luar angkasa tidak dapat bertahan lama di permukaannya.
+    </p>
+    <img src='https://awsimages.detik.net.id/community/media/visual/2021/04/29/foto-venus.png?w=600&q=90'>
+    <h2>Sehari di Venus berlangsung lebih dari satu tahun. </h2>
+    <p>Dibutuhkan 243 hari Bumi untuk berputar satu kali pada porosnya (hari sideris). Orbit planet mengelilingi Matahari memakan waktu 225 hari Bumi, dibandingkan dengan Bumi yang 365 hari. Satu hari di permukaan Venus (hari matahari) membutuhkan 117 hari Bumi.</p>
+    <h2>Venus berputar berlawanan arah dengan sebagian besar planet lain.</h2>
+    <p>Artinya Venus berputar berlawanan arah dengan Matahari, disebut juga rotasi retrograde. Kemungkinan penyebabnya adalah tabrakan di masa lalu dengan asteroid atau benda lain yang menyebabkan planet mengubah jalur rotasinya. Planet ini juga berbeda dari kebanyakan planet lain di tata surya kita karena tidak memiliki satelit alami.</p>
+    <h2>Venus adalah objek paling terang kedua di langit malam. </h2>
+    <p>Hanya Bulan yang lebih terang. Dengan magnitudo antara -3,8 hingga -4,6 Venus sangat terang sehingga dapat dilihat pada siang hari saat hari cerah.
+    </p>
+    <h2>Tekanan atmosfer di Venus 92 kali lebih besar dibandingkan Bumi. </h2>
+    <p>Meskipun ukuran dan massanya mirip dengan Bumi, asteroid-asteroid kecil tersebut akan hancur saat memasuki atmosfernya, yang berarti tidak ada kawah kecil yang terletak di permukaan planet ini. Tekanan yang dirasakan manusia di permukaan akan setara dengan tekanan yang dialami jauh di bawah laut di Bumi.</p>
+    <br>
+  </div>
+  <input class='read' id='readEarth' type='radio' name='earthRead'>
+  <label class='closeBig' for='closeEarth'></label>
+  <input class='read' id='closeEarth' type='radio' name='earthRead'>
+  <div class='panel'>
+    <h1>Bumi</h1>
+    <p>Bumi, rumah kita, adalah planet ketiga dari matahari. Ini adalah satu-satunya planet yang diketahui memiliki atmosfer yang mengandung oksigen bebas, lautan air cair di permukaannya, dan, tentu saja, kehidupan.
+    </p>
+    <p>Bumi adalah planet terbesar kelima di tata surya — lebih kecil dari empat raksasa gas, Jupiter, Saturnus, Uranus, dan Neptunus, namun lebih besar dari tiga planet berbatu lainnya, </p>
+    <img src='https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=350'>
+    <h2>Rotasi bumi perlahan-lahan melambat.</h2>
+    <p>Perlambatan ini terjadi hampir tanpa terasa, sekitar 17 milidetik per seratus tahun, meskipun laju terjadinya tidak sepenuhnya seragam. Hal ini mempunyai efek memperpanjang hari-hari kita, namun hal ini terjadi sangat lambat sehingga dibutuhkan waktu hingga 140 juta tahun sebelum lamanya satu hari bertambah menjadi 25 jam.</p>
+    <h2>Bumi pernah diyakini sebagai pusat alam semesta.</h2>
+    <p>Karena pergerakan nyata Matahari dan planet-planet dalam kaitannya dengan sudut pandang mereka, para ilmuwan kuno bersikeras bahwa Bumi tetap statis, sementara benda-benda langit lainnya bergerak dalam orbit melingkar di sekitarnya. Akhirnya, pandangan bahwa Matahari adalah pusat alam semesta dikemukakan oleh Copernicus, meskipun kenyataannya tidak demikian.</p>
+    <h2>Bumi mempunyai medan magnet yang kuat.</h2>
+    <p>Fenomena ini disebabkan oleh inti planet yang terbuat dari besi-nikel, ditambah dengan rotasinya yang cepat. Medan ini melindungi bumi dari pengaruh angin matahari.</p>
+    <h2>Hanya ada satu satelit alami di planet Bumi.</h2>
+    <p>Jika dilihat dari persentase ukuran benda yang diorbitnya, Bulan adalah satelit terbesar di antara planet mana pun di tata surya kita. Namun secara riil, ini hanyalah satelit alami terbesar kelima.</p>
+    <br>
+  </div>
+  <input class='read' id='readMars' type='radio' name='marsRead'>
+  <label class='closeBig' for='closeMars'></label>
+  <input class='read' id='closeMars' type='radio' name='marsRead'>
+  <div class='panel'>
+    <h1>Mars</h1>
+    <p>Mars adalah planet keempat dari matahari. Sesuai dengan warna planet merah yang berdarah, orang Romawi menamainya dengan nama dewa perang mereka. Bangsa Romawi meniru bangsa Yunani kuno, yang juga menamai planet ini dengan nama dewa perang mereka, Ares. Peradaban lain juga biasanya memberi nama planet berdasarkan warnanya. Misalnya, orang Mesir menamakannya "Her Desher", yang berarti "yang merah", sedangkan astronom Tiongkok kuno menjulukinya "bintang api".</p>
+    <img src='https://1.bp.blogspot.com/-ou7Je3OVg6U/WYtxDqjNp_I/AAAAAAAACSQ/fsopS5VtFg4bmlv8hQNfiRYfJqTygCotQCLcBGAs/s2048/Martian%2Blandscape%2Bby%2BAmante%2BLombardi.jpg'>
+    <h2>Mars dan Bumi memiliki daratan yang kurang lebih sama.</h2>
+    <p>Meskipun Mars hanya memiliki 15% volume bumi dan lebih dari 10% massa bumi, sekitar dua pertiga permukaan bumi tertutup air. Gravitasi permukaan Mars hanya 37% dari bumi (artinya Anda bisa melompat hampir tiga kali lebih tinggi di Mars).</p>
+    <h2>Mars adalah rumah bagi gunung tertinggi di tata surya.</h2>
+    <p>Olympus Mons, gunung berapi perisai, memiliki tinggi 21 km dan diameter 600 km. Meskipun telah terbentuk selama miliaran tahun, bukti aliran lava vulkanik masih sangat baru sehingga banyak ilmuwan percaya bahwa lava tersebut masih aktif.
+    </p>
+    <h2> 18 Hanya Misi ke Mars yang berhasil.
+    </h2>
+    <p>Hingga September 2014, terdapat 40 misi ke Mars, termasuk pengorbit, pendarat, dan penjelajah, namun belum termasuk flyby. Kedatangan terbaru termasuk misi Mars Curiosity pada tahun 2012, misi MAVEN, yang tiba pada tanggal 22 September 2014, diikuti oleh pengorbit MOM Mangalyaan dari Organisasi Penelitian Luar Angkasa India, yang tiba pada tanggal 24 September 2014. Misi berikutnya yang akan tiba adalah misi ExoMars Badan Antariksa Eropa, yang terdiri dari pengorbit, pendarat, dan penjelajah, diikuti oleh misi pendarat robotik InSight NASA, dijadwalkan diluncurkan pada Maret 2016 dan direncanakan tiba pada September 2016.
+    </p>
+    <h2>Mars memiliki badai debu terbesar di tata surya.</h2>
+    <p>Mereka bisa bertahan berbulan-bulan dan menutupi seluruh planet. Musim-musimnya ekstrem karena jalur orbitnya yang elips (berbentuk oval) mengelilingi Matahari lebih memanjang dibandingkan kebanyakan planet lain di tata surya.</p>
+    <br>
+  </div>
+  <input class='read' id='readJupiter' type='radio' name='jupiterRead'>
+  <label class='closeBig' for='closeJupiter'></label>
+  <input class='read' id='closeJupiter' type='radio' name='jupiterRead'>
+  <div class='panel'>
+    <h1>Jupiter</h1>
+    <p>Jupiter adalah planet terbesar di tata surya. Tepatnya, nama ini diambil dari nama raja para dewa dalam mitologi Romawi. Dengan cara serupa, orang Yunani kuno menamai planet ini dengan nama Zeus, raja dewa Yunani.</p>
+    <p>Jupiter membantu merevolusi cara kita memandang alam semesta dan diri kita sendiri pada tahun 1610, ketika Galileo menemukan empat bulan besar Jupiter — Io, Europa, Ganymede, dan Callisto, yang sekarang dikenal sebagai bulan Galilea. Ini adalah pertama kalinya benda langit terlihat mengelilingi objek selain Bumi, hal ini mendukung pandangan Copernicus bahwa Bumi bukanlah pusat alam semesta.</p>
+    <img src='data:image/jpeg;base64,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'>
+    <h2>Jupiter adalah objek paling terang keempat di tata surya.</h2>
+    <p>Hanya Matahari, Bulan dan Venus yang lebih terang. Ini adalah salah satu dari lima planet yang terlihat dengan mata telanjang dari Bumi.</p>
+    <h2>Bangsa Babilonia kuno adalah orang pertama yang mencatat penampakan Jupiter.</h2>
+    <p>Ini terjadi sekitar abad ke-7 atau ke-8 SM. Nama Jupiter diambil dari nama raja para dewa Romawi. Bagi orang Yunani, itu melambangkan Zeus, dewa guntur. Orang Mesopotamia memandang Yupiter sebagai dewa Marduk dan pelindung kota Babilonia. Suku-suku Jerman memandang planet ini sebagai Donar, atau Thor.</p>
+    <h2>Jupiter mempunyai hari terpendek di antara semua planet.</h2>
+    <p>Ia berputar pada porosnya setiap 9 jam 55 menit sekali. Rotasi yang cepat membuat planet ini sedikit rata, sehingga membuatnya berbentuk pepat.</p>
+    <h2>Jupiter mengorbit Matahari setiap 11,8 tahun Bumi sekali.</h2>
+    <p>Dari sudut pandang kita di Bumi, ia tampak bergerak perlahan di langit, membutuhkan waktu berbulan-bulan untuk berpindah dari satu konstelasi ke konstelasi lainnya.</p>
+    <br>
+  </div>
+  <input class='read' id='readSaturn' type='radio' name='saturnRead'>
+  <label class='closeBig' for='closeSaturn'></label>
+  <input class='read' id='closeSaturn' type='radio' name='saturnRead'>
+  <div class='panel'>
+    <h1>Saturnus</h1>
+    <p>Saturnus adalah planet keenam dari matahari dan planet terbesar kedua di tata surya. Saturnus adalah nama Romawi untuk Cronus, penguasa para Titan dalam mitologi Yunani. Saturnus adalah akar kata dalam bahasa Inggris "Saturday."</p>
+    <p>Saturnus adalah planet terjauh dari Bumi yang dapat dilihat dengan mata telanjang, namun melalui teleskoplah ciri-ciri planet yang paling menonjol dapat dilihat: cincin Saturnus. Meskipun raksasa gas lain di tata surya – Jupiter, Uranus, dan Neptunus – juga memiliki cincin, tidak diragukan lagi bahwa cincin Saturnus adalah yang paling luar biasa.</p>
+    <img src='http://ak0.picdn.net/shutterstock/videos/4049260/thumb/1.jpg'>
+    <h2>Saturnus bisa dilihat dengan mata telanjang.</h2>
+    <p>Ia merupakan objek paling terang kelima di tata surya dan juga mudah dipelajari melalui teropong atau teleskop kecil.</p>
+    <h2>Saturnus telah dikenal orang dahulu, termasuk para pengamat Babilonia dan Timur Jauh.</h2>
+    <p>Dinamakan untuk dewa Romawi Saturnus, dan dikenal oleh orang Yunani sebagai Cronus.</p>
+    <h2>Saturnus adalah planet paling datar.</h2>
+    <p>Diameter kutubnya adalah 90% dari diameter ekuatornya, hal ini disebabkan kepadatannya yang rendah dan rotasinya yang cepat. Saturnus berputar pada porosnya setiap 10 jam 34 menit sekali, menjadikannya hari terpendek kedua di antara planet-planet di tata surya.
+    </p>
+    <h2>Saturnus mengorbit Matahari setiap 29,4 tahun Bumi sekali.</h2>
+    <p>Pergerakannya yang lambat dengan latar belakang bintang membuatnya mendapat julukan “Lubadsagush” dari bangsa Asiria kuno. Namanya berarti “oldest of the old”.</p>
+    <br>
+  </div>
+  <input class='read' id='readUranus' type='radio' name='uranusRead'>
+  <label class='closeBig' for='closeUranus'></label>
+  <input class='read' id='closeUranus' type='radio' name='uranusRead'>
+  <div class='panel'>
+    <h1>Uranus</h1>
+    <p>Uranus merupakan planet ketujuh dari matahari dan pertama kali ditemukan para ilmuwan. Meskipun Uranus terlihat dengan mata telanjang, ia telah lama disalahartikan sebagai bintang karena keremangan dan orbitnya yang lambat. Planet ini juga terkenal karena kemiringannya yang dramatis, yang menyebabkan porosnya hampir mengarah langsung ke matahari</p>
+    <p>Astronom Inggris William Herschel menemukan Uranus secara tidak sengaja pada tanggal 13 Maret 1781, dengan teleskopnya saat mengamati semua bintang hingga 10 kali lebih redup daripada yang dapat dilihat dengan mata telanjang. Satu "bintang" tampak berbeda, dan dalam waktu satu tahun Uranus terlihat mengikuti orbit planet.</p>
+    <img src='data:image/jpeg;base64,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'>
+    <h2>Uranus secara resmi ditemukan oleh Sir William Herschel pada tahun 1781.</h2>
+    <p>Terlalu redup untuk dilihat oleh orang dahulu. Awalnya Herschel mengira itu adalah komet, namun beberapa tahun kemudian dipastikan sebagai planet. Herscal mencoba agar penemuannya diberi nama “Georgian Sidus” yang diambil dari nama Raja George III. Nama Uranus diusulkan oleh astronom Johann Bode. Nama ini berasal dari dewa Yunani kuno Ouranos.</p>
+    <h2>Uranus turns on its axis once every 17 hours, 14 minutes.</h2>
+    <p>Planet ini berputar dalam arah retrograde, berlawanan dengan arah rotasi Bumi dan sebagian besar planet lainnya.</p>
+    <h2>Uranus melakukan satu perjalanan mengelilingi Matahari setiap 84 tahun Bumi.</h2>
+    <p>Di beberapa bagian orbitnya, salah satu kutubnya mengarah langsung ke Matahari dan mendapat sinar matahari langsung selama sekitar 42 tahun. Selebihnya mereka berada dalam kegelapan.
+    </p>
+    <h2>Uranus sering disebut sebagai planet “raksasa es”.</h2>
+    <p>Seperti raksasa gas lainnya, ia memiliki lapisan atas hidrogen yang mengandung campuran helium. Di bawahnya terdapat “mantel es” yang mengelilingi inti batuan dan es. Atmosfer bagian atas terbuat dari air, amonia, dan kristal es metana yang memberi warna biru pucat pada planet ini.</p>
+    <br>
+  </div>
+  <input class='read' id='readNeptune' type='radio' name='neptuneRead'>
+  <label class='closeBig' for='closeNeptune'></label>
+  <input class='read' id='closeNeptune' type='radio' name='neptuneRead'>
+  <div class='panel'>
+    <h1>Neptunus</h1>
+    <p>Neptunus adalah planet kedelapan dari matahari. Uranus adalah planet pertama yang keberadaannya dapat diprediksi melalui perhitungan matematis sebelum benar-benar terlihat melalui teleskop pada tanggal 23 September 1846. Ketidakteraturan dalam orbit Uranus membuat astronom Perancis Alexis Bouvard berpendapat bahwa tarikan gravitasi dari benda langit lain mungkin saja terjadi. bertanggung jawablah. Astronom Jerman Johann Galle kemudian mengandalkan perhitungan selanjutnya untuk membantu menemukan Neptunus melalui teleskop. Sebelumnya, astronom Galileo Galilei membuat sketsa planet tersebut, namun ia salah mengira planet tersebut sebagai bintang karena geraknya yang lambat. Sesuai dengan semua planet lain yang terlihat di langit, dunia baru ini diberi nama dari mitologi Yunani dan Romawi — Neptunus, dewa laut Romawi.</p>
+    <p>Hanya satu misi yang telah terbang melewati Neptunus – Voyager 2 pada tahun 1989 – yang berarti bahwa para astronom telah melakukan sebagian besar penelitian menggunakan teleskop berbasis darat. Saat ini, masih banyak misteri mengenai planet biru yang sejuk ini, seperti mengapa anginnya begitu kencang dan mengapa medan magnetnya tidak seimbang.</p>
+    <img src='data:image/jpeg;base64,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'>
+    <h2>Neptunus tidak diketahui orang dahulu.</h2>
+    <p>Ia tidak terlihat dengan mata telanjang dan pertama kali diamati pada tahun 1846. Posisinya ditentukan dengan menggunakan prediksi matematis. Namanya diambil dari nama dewa laut Romawi.</p>
+    <h2>Neptunus berputar pada porosnya dengan sangat cepat.</h2>
+    <p>Awan khatulistiwanya membutuhkan waktu 18 jam untuk melakukan satu rotasi. Hal ini karena Neptunus bukanlah benda padat.</p>
+    <h2>Neptunus adalah raksasa es terkecil.</h2>
+    <p>Meski lebih kecil dari Uranus, Neptunus memiliki massa yang lebih besar. Di bawah atmosfernya yang berat, Uranus terbuat dari lapisan gas hidrogen, helium, dan metana. Mereka menutupi lapisan air, amonia, dan es metana. Inti bagian dalam planet ini terbuat dari batuan.</p>
+    <h2>Atmosfer Neptunus terbuat dari hidrogen dan helium, dengan sedikit metana.</h2>
+    <p>Metana menyerap cahaya merah, sehingga membuat planet tampak biru indah. Awan tinggi dan tipis melayang di bagian atas atmosfer.</p>
+  </div>
+  <input class='read' id='readPluto' type='radio' name='plutoRead'>
+  <label class='closeBig' for='closePluto'></label>
+  <input class='read' id='closePluto' type='radio' name='plutoRead'>
+  <div class='panel'>
+    <h1>Pluto</h1>
+    <p>Pluto, yang pernah dianggap sebagai planet kesembilan dan terjauh dari Matahari, kini menjadi planet katai terbesar di tata surya. Ia juga merupakan salah satu anggota Sabuk Kuiper terbesar yang diketahui, sebuah zona gelap di luar orbit Neptunus yang diperkirakan dihuni oleh ratusan ribu benda berbatu dan es yang masing-masing berukuran lebih dari 62 mil (100 kilometer) lebarnya, bersama dengan 1 triliun atau lebih komet. </p>
+    <p>Pada tahun 2006, Pluto diklasifikasikan ulang sebagai planet kerdil, suatu perubahan yang secara luas dianggap sebagai penurunan pangkat. Pertanyaan tentang status planet Pluto telah menarik kontroversi dan menimbulkan perdebatan di komunitas ilmiah, dan masyarakat umum, sejak saat itu. Pada tahun 2017, sebuah kelompok sains (termasuk anggota misi New Horizon) mengusulkan definisi baru tentang keplanetan berdasarkan "benda bulat di ruang angkasa yang lebih kecil dari bintang", yang akan membuat jumlah planet di tata surya kita bertambah dari 8 menjadi sekitar 100 .</p>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/asd.jpeg'>
+    <h2>Nama Pluto diambil dari nama dewa dunia bawah Yunani.</h2>
+    <p>Ini adalah nama selanjutnya untuk Hades yang lebih terkenal dan diusulkan oleh Venetia Burney, seorang siswi berusia sebelas tahun dari Oxford, Inggris.</p>
+    <h2>Pluto direklasifikasi dari sebuah planet menjadi planet katai pada tahun 2006.</h2>
+    <p>Hal ini terjadi ketika IAU meresmikan definisi planet sebagai “Planet adalah benda langit yang (a) mengorbit mengelilingi Matahari, (b) mempunyai massa yang cukup untuk gravitasinya sendiri untuk mengatasi gaya benda tegar sehingga mengasumsikan bentuk kesetimbangan hidrostatik (hampir bulat), dan (c) telah membersihkan lingkungan di sekitar orbitnya.”</p>
+    <h2>Pluto ditemukan pada 18 Februari 1930 oleh Observatorium Lowell.</h2>
+    <p>Selama 76 tahun antara Pluto ditemukan dan saat ia diklasifikasikan ulang sebagai planet kerdil, ia menyelesaikan kurang dari sepertiga orbitnya mengelilingi Matahari.
+    </p>
+    <h2>Pluto memiliki lima bulan yang diketahui.</h2>
+    <p>Bulan-bulan tersebut adalah Charon (ditemukan tahun 1978,), Hydra dan Nix (keduanya ditemukan tahun 2005), Kerberos aslinya P4 (ditemukan tahun 2011) dan Styx awalnya P5 (ditemukan tahun 2012) sebutan resmi S/2011 (134340) 1 dan S/2012 ( 134340) 1.</p>
+  </div>
+</body>
+</html>
+
+
